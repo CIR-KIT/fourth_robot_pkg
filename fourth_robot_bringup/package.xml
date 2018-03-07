@@ -19,5 +19,7 @@
   <run_depend>ira_laser_tools</run_depend>
   <run_depend>fourth_robot_driver</run_depend>
   <run_depend>cirkit_waypoint_manager</run_depend>
-
+  <run_depend>cirkit_waypoint_navigator</run_depend>
+  <run_depend>cirkit_waypoint_generator</run_depend>
+  
 </package>
