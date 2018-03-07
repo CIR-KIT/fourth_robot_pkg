@@ -11,6 +11,7 @@
   <author email="groadpg@gmail.com">RyodoTanaka</author>
 
   <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roslaunch</build_depend>
   <run_depend>ros_control</run_depend>
   <run_depend>gazebo_ros_control</run_depend>
   <run_depend>gazebo_ros</run_depend>

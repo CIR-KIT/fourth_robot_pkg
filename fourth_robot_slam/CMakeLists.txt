@@ -4,3 +4,8 @@ find_package(catkin REQUIRED)
 catkin_package(
   CATKIN_DEPENDS
 )
+
+if (CATKIN_ENABLE_TESTING)
+  find_package(roslaunch REQUIRED)
+  roslaunch_add_file_check(launch)
+endif()

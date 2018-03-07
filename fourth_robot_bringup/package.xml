@@ -10,6 +10,7 @@
   
   <author email="groadpg@gmail.com">Ryodo Tanaka</author>
   <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roslaunch</build_depend>
   <run_depend>joy_twist</run_depend>
   <run_depend>gim30</run_depend>
   <run_depend>rt_usb_9axisimu_driver</run_depend>

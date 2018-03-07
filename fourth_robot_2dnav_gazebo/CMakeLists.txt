@@ -170,6 +170,10 @@ catkin_package(
 #############
 ## Testing ##
 #############
+if (CATKIN_ENABLE_TESTING)
+  find_package(roslaunch REQUIRED)
+  roslaunch_add_file_check(launch)
+endif()
 
 ## Add gtest based cpp test target and link libraries
 # catkin_add_gtest(${PROJECT_NAME}-test test/test_fourth_robot_2dnav_gazebo.cpp)
