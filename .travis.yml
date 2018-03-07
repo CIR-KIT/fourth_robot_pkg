@@ -20,7 +20,7 @@ env:
     - ROSINSTALL_FILENAME=.indigo_depends.rosinstall
 
   matrix:		
-    - ROS_DISTRO=indigo ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu ROSDEP_SKIP_KEYS=cartographer_ros cirkit_waypoint_genarator
+    - ROS_DISTRO=indigo ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu ROSDEP_SKIP_KEYS=cartographer_ros cirkit_waypoint_genarator cirkit_waypoint_manager
 install:		
   - git clone https://github.com/ros-industrial/industrial_ci.git .ci_config		
 script:		
