@@ -2,7 +2,11 @@ cmake_minimum_required(VERSION 2.8.3)
 project(fourth_robot_description)
 find_package(catkin REQUIRED)
 
-# install(DIRECTORY robots DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+catkin_destinations()
+install(DIRECTORY robots/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/robots
+  PATTERN ".xacro" EXCLUDE
+  )
 
 if (CATKIN_ENABLE_TESTING)
   find_package(roslaunch REQUIRED)
