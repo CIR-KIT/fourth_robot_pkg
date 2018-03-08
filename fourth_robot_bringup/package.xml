@@ -11,16 +11,22 @@
   <author email="groadpg@gmail.com">Ryodo Tanaka</author>
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roslaunch</build_depend>
+  <run_depend>joy</run_depend>
   <run_depend>joy_twist</run_depend>
   <run_depend>gim30</run_depend>
   <run_depend>rt_usb_9axisimu_driver</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rviz</run_depend>
   <run_depend>urg_node</run_depend>
+  <run_depend>usb_cam</run_depend>
   <run_depend>ira_laser_tools</run_depend>
   <run_depend>ira_laser_tools</run_depend>
+  <run_depend>image_view</run_depend>
   <run_depend>fourth_robot_driver</run_depend>
   <run_depend>fourth_robot_description</run_depend>
   <run_depend>cirkit_waypoint_manager</run_depend>
   <run_depend>cirkit_waypoint_navigator</run_depend>
   <run_depend>cirkit_waypoint_generator</run_depend>
+  <run_depend>xacro</run_depend>
   
 </package>

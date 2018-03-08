@@ -15,6 +15,10 @@
   <run_depend>ros_control</run_depend>
   <run_depend>gazebo_ros_control</run_depend>
   <run_depend>gazebo_ros</run_depend>
+  <run_depend>fourth_robot_bringup</run_depend>
   <run_depend>fourth_robot_control</run_depend>
   <run_depend>fourth_robot_description</run_depend>
+  <run_depend>xacro</run_depend>
+  <run_depend>joy</run_depend>
+  <run_depend>joy_twist</run_depend>
 </package>
