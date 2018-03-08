@@ -17,5 +17,6 @@
   <run_depend>robot_state_publisher</run_depend>
   <run_depend>gmapping</run_depend>
   <run_depend>cartographer_ros</run_depend>
+  <run_depend>fourth_robot_description</run_depend>
 
 </package>
