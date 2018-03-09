@@ -9,4 +9,7 @@ catkin_package(
 if (CATKIN_ENABLE_TESTING)
   find_package(roslaunch REQUIRED)
   roslaunch_add_file_check(launch)
+  roslaunch_add_file_check(launch/joy)
+  roslaunch_add_file_check(launch/robot)
+  roslaunch_add_file_check(launch/sensors)
 endif()
