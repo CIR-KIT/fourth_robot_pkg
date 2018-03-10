@@ -18,7 +18,7 @@ env:
     - ROS_PARALLEL_TEST_JOBS=-j`nproc`		
     - UPSTREAM_WORKSPACE=file
     - ROSINSTALL_FILENAME=.indigo_depends.rosinstall
-    - TARGET_PKGS="fourth_robot_description"
+    - TARGET_PKGS="fourth_robot_2dnav fourth_robot_2dnav_gazebo fourth_robot_bringup fourth_robot_control fourth_robot_description fourth_robot_driver fourth_robot_gazebo fourth_robot_slam cirkit_waypoint_generator cirkit_waypoint_manager cirkit_waypoint_navigator cirkit_waypoint_manager_msgs gim30 ira_laser_tools joy_twist rt_usb_9axisimu_driver"
 
   matrix:		
     - ROS_DISTRO=indigo ROS_REPOSITORY_PATH=http://packages.ros.org/ros/ubuntu ROSDEP_SKIP_KEYS="cartographer_ros cirkit_waypoint_genarator cirkit_waypoint_manager"
