@@ -1,0 +1,70 @@
+<launch>
+  <arg name="model" default="$(find fourth_robot_description)/robots/fourth_robot.urdf.xacro"/>
+
+  <arg name="scan_topic" default="base_scan"/>
+
+  <param name="/use_sim_time" value="true" />
+  <!-- prameters -->
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(arg model)'"/>
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher"
+		type="robot_state_publisher" />
+
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping">
+    <remap from="scan" to="$(arg scan_topic)"/>
+  </node>
+  
+<!--   <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping"> -->
+<!--     <rosparam> -->
+<!--       use_sim_time: true -->
+
+<!--       odom_frame: odom -->
+<!--       base_frame: base_footprint -->
+<!--       map_frame: map -->
+
+<!--       map_update_interval: 0.5 # Publish new map -->
+
+<!--       maxUrange: 5.0 # Should be just less than sensor range -->
+<!--       maxRange: 5.5   # Should be just greater than sensor range -->
+<!--       particles: 10  # Increased from 80 -->
+
+<!--       # Update frequencies -->
+<!--       linearUpdate: 0.3 -->
+<!--       angularUpdate: 0.5 -->
+<!--       temporalUpdate: 2.0 -->
+<!--       resampleThreshold: 0.5 -->
+
+<!--       # Initial Map Size -->
+<!--       xmin: -100.0 -->
+<!--       ymin: -100.0 -->
+<!--       xmax: 100.0 -->
+<!--       ymax: 100.0 -->
+<!--       delta: 0.05 -->
+
+<!--       sigma: 0.03 -->
+<!--       kernelSize: 1 -->
+<!--       lstep: 0.05 -->
+<!--       astep: 0.05 -->
+<!--       iterations: 5 -->
+<!--       lsigma: 0.070 -->
+<!--       ogain: 3.0 -->
+<!--       lskip: 0 -->
+<!--       llsamplerange: 0.01 -->
+<!--       llsamplestep: 0.01 -->
+<!--       lasamplerange: 0.005 -->
+<!--       lasamplestep: 0.005 -->
+<!--       srr: 0.3 -->
+<!--       srt: 0.4 -->
+<!--       str: 0.3 -->
+<!--       stt: 0.4  -->
+<!--     </rosparam> -->
+<!--     <remap from="scan" to="$(arg scan_topic)"/> -->
+<!-- </node> -->
+
+
+  
+  <node name="playbag" pkg="rosbag" type="play"
+		args="--clock $(arg bag_filename)" />
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+		args="-d $(find fourth_robot_slam)/config/rviz/gmapping.rviz" />
+</launch>
