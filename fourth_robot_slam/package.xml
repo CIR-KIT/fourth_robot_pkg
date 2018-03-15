@@ -3,21 +3,19 @@
   <name>fourth_robot_slam</name>
   <version>1.0.0</version>
   <description>The fourth_robot_slam package</description>
-  
-  <maintainer email="groadpg@gmail.com">Ryodo Tanaka</maintainer>
+
+  <maintainer email="groadpg@gmail.com">RyodoTanaka</maintainer>
   <license>BSD</license>
-  <url type="repository">http://github.com/Nishida-Lab/TC2015</url>
+  <url type="repository">http://github.com/CIR-KIT/fourth_robot_pkg</url>
   
-  <author email="groadpg@gmail.com">Ryodo Tanaka</author>
-  
+  <author email="groadpg@gmail.com">RyodoTanaka</author>
+
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roslaunch</build_depend>
-  <run_depend>rosbag</run_depend>
-  <run_depend>rviz</run_depend>
-  <run_depend>robot_state_publisher</run_depend>
-  <run_depend>gmapping</run_depend>
-  <run_depend>cartographer_ros</run_depend>
   <run_depend>fourth_robot_description</run_depend>
   <run_depend>xacro</run_depend>
-
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>gmapping</run_depend>
+  <run_depend>rosbag</run_depend>
+  <run_depend>rviz</run_depend>
 </package>
