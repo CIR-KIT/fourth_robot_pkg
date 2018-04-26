@@ -5,7 +5,6 @@ find_package(catkin REQUIRED)
 catkin_destinations()
 install(DIRECTORY robots/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/robots
-  PATTERN ".xacro" EXCLUDE
   )
 
 if (CATKIN_ENABLE_TESTING)
