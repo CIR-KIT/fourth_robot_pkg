@@ -13,3 +13,6 @@
 [submodule "fourth_robot_tools/cirkit_waypoint_manager_msgs"]
 	path = fourth_robot_tools/cirkit_waypoint_manager_msgs
 	url = https://github.com/CIR-KIT/cirkit_waypoint_manager_msgs.git
+[submodule "fourth_robot_tools/ira_laser_tools"]
+	path = fourth_robot_tools/ira_laser_tools
+	url = https://github.com/iralabdisco/ira_laser_tools.git
