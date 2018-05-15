@@ -3,8 +3,8 @@ project(fourth_robot_description)
 find_package(catkin REQUIRED)
 
 catkin_destinations()
-install(DIRECTORY robots/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/robots
+install(DIRECTORY launch meshes robots urdf
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
   )
 
 if (CATKIN_ENABLE_TESTING)
