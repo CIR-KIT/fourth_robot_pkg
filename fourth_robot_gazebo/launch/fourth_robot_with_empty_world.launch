@@ -18,7 +18,7 @@
   </include>
 
   <!-- lrf merger -->
-  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+  <include file="$(find fourth_robot_bringup)/launch/sensors/lrf_merger.launch"/>
 
   <!-- Load the URDF into the ROS Parameter Server -->
   <param name="robot_description"
