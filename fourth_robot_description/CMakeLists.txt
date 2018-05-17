@@ -6,7 +6,7 @@ catkin_package()
 
 # Install
 set(LAUNCH_DIRS launch launch/config)
-set(MESH_DIRS meshes/DAE/base meshes/DAE/wheel meshes/DAE/sensors/front_lrf meshes/DAE/front_lrf meshes/DAE/gim30 meshes/DAE/gps meshes/DAE/rear_lrf meshes/STL/base meshes/STL/sensors/front_lrf meshes/STL/front_lrf meshes/STL/gim30 meshes/STL/gps meshes/STL/rear_lrf)
+set(MESH_DIRS meshes/DAE/base meshes/DAE/wheel meshes/DAE/sensors/front_lrf meshes/DAE/sensors/gim30 meshes/DAE/sensors/gps meshes/DAE/sensors/rear_lrf meshes/STL/base meshes/STL/sensors/front_lrf meshes/STL/sensors/gim30 meshes/STL/sensors/gps meshes/STL/sensors/rear_lrf)
 set(URDF_DIRS robots urdf urdf/base urdf/wheel urdf/gim30 urdf/gps urdf/lrf)
 
 foreach(dir ${LAUNCH_DIRS} ${MESH_DIRS} ${URDF_DIRS})
