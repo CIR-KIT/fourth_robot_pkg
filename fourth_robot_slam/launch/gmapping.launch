@@ -1,5 +1,6 @@
 <launch>
   <arg name="model" default="$(find fourth_robot_description)/robots/fourth_robot.urdf.xacro"/>
+  <arg name="bag_filename" default="something.bag"/>
 
   <arg name="scan_topic" default="base_scan"/>
 
