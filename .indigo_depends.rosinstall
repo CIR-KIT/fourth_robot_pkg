@@ -17,7 +17,7 @@
 - git:
     local-name: fourth_robot_tools/cirkit_waypoint_manager
     uri: https://github.com/CIR-KIT/cirkit_waypoint_manager
-    version: master
+    version: ryodo/add-install
 - git:
     local-name: fourth_robot_tools/cirkit_waypoint_manager_msgs
     uri: https://github.com/CIR-KIT/cirkit_waypoint_manager_msgs
