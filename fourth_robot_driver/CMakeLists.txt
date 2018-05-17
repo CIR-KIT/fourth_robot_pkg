@@ -13,6 +13,7 @@ catkin_package(
   CATKIN_DEPENDS geometry_msgs roscpp std_msgs
 )
 
+# Build
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
@@ -36,9 +37,12 @@ install(TARGETS fourth_robot_driver_node
 install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
 )
-install(DIRECTORY launch
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
+
+
+foreach(dir config launch)
+  install(DIRECTORY ${dir}/
+    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir})
+endforeach(dir)
 
 # Test
 if (CATKIN_ENABLE_TESTING)
