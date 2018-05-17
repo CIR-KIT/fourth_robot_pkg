@@ -2,10 +2,13 @@ cmake_minimum_required(VERSION 2.8.3)
 project(fourth_robot_description)
 find_package(catkin REQUIRED)
 
-catkin_destinations()
-install(DIRECTORY launch meshes robots urdf
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+catkin_package()
+
+foreach(dir launch meshes robots urdf)
+install(DIRECTORY ${dir}/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir}
   )
+endforeacn(dir)
 
 if (CATKIN_ENABLE_TESTING)
   find_package(roslaunch REQUIRED)
