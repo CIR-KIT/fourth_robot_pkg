@@ -1,0 +1,24 @@
+- git:
+    local-name: fourth_robot_tools/gim30
+    uri: https://github.com/RyodoTanaka/gim30.git
+    version: master
+- git:
+    local-name: fourth_robot_tools/joy_twist
+    uri: https://github.com/RyodoTanaka/joy_twist.git
+    version: master
+- git:
+    local-name: fourth_robot_tools/rt_usb_9axisimu_driver
+    uri: https://github.com/rt-net/rt_usb_9axisimu_driver.git
+    version: master
+- git:
+    local-name: fourth_robot_tools/ira_laser_tools
+    uri: https://github.com/CIR-KIT/ira_laser_tools.git
+    version: master
+- git:
+    local-name: fourth_robot_tools/cirkit_waypoint_manager
+    uri: https://github.com/CIR-KIT/cirkit_waypoint_manager
+    version: ryodo/add-install
+- git:
+    local-name: fourth_robot_tools/cirkit_waypoint_manager_msgs
+    uri: https://github.com/CIR-KIT/cirkit_waypoint_manager_msgs
+    version: master
