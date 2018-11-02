@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="fourth_robot_driver" type="fourth_robot_driver_node" name="fourth_robot_driver" output="screen">
+	<rosparam command="load" ns="/fourth_robot_driver/property" file="$(find fourth_robot_driver)/config/property.yaml" />
+	<rosparam command="load" ns="/fourth_robot_driver/property" file="$(find fourth_robot_driver)/config/kinematics.yaml" />
+	<rosparam command="load" ns="/fourth_robot_driver/imcs01" file="$(find fourth_robot_driver)/config/iMCs01.yaml" />
+	<rosparam command="load" ns="/fourth_robot_driver/control" file="$(find fourth_robot_driver)/config/control.yaml" />
+  </node>
+</launch>

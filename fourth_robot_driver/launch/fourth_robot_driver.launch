@@ -1,8 +1,8 @@
 <launch>
-  <node pkg="fourth_robot_driver" type="fourth_robot_driver_node" name="fourth_robot_driver" output="screen">
-	<rosparam command="load" ns="/fourth_robot_driver/property" file="$(find fourth_robot_driver)/config/property.yaml" />
-	<rosparam command="load" ns="/fourth_robot_driver/property" file="$(find fourth_robot_driver)/config/kinematics.yaml" />
-	<rosparam command="load" ns="/fourth_robot_driver/imcs01" file="$(find fourth_robot_driver)/config/iMCs01.yaml" />
-	<rosparam command="load" ns="/fourth_robot_driver/control" file="$(find fourth_robot_driver)/config/control.yaml" />
-  </node>
+  <!-- Yp-Spur Coodinator -->
+  <node pkg="ypspur_ros_bridge" type="ypspur-coordinator.sh" name="ypspur_coordinator" args="-p $(find fourth_robot_driver)/ypspur_params/fourth_robot.param -d $(optenv robodev /dev/serial/by-id/usb-T-frog_project_T-frog_Driver-if00) --reconnect" output="screen" />
+
+  <!--  YPSPUR_ROS_BRIDGE -->
+  <!-- If ypspur_ros_bridge is launched before ypspur-coordinator initialize, it does not work. Therefore wait for it: -->
+  <node pkg="ypspur_ros_bridge" type="wait_and_ypspur_ros_bridge.sh" name="ypspur_ros_bridge"/>
 </launch>
