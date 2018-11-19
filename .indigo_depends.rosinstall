@@ -22,3 +22,8 @@
     local-name: fourth_robot_tools/cirkit_waypoint_manager_msgs
     uri: https://github.com/CIR-KIT/cirkit_waypoint_manager_msgs
     version: master
+- git:
+    local-name: fourth_robot_tools/ypspur_ros_bridge
+    uri: https://github.com/openspur/yp-spur
+    version: master
+
